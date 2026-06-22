@@ -54,7 +54,7 @@ package("zethcxx.stx")
     set_kind("library", { headeronly = true })
     set_urls("https://github.com/zethcxx/stx.git")
 
-    add_versions( "v2.3.0", "v2.3.0" )
+    add_versions( "v0.2.0", "v0.2.0" )
 
     add_configs( "use_modules", {
         builtin = false,
@@ -82,7 +82,7 @@ package("zethcxx.stx")
     end)
 package_end()
 
-add_requires("zethcxx.stx v2.3.0", { configs = { use_modules = true } })
+add_requires("zethcxx.stx", { configs = { use_modules = true } })
 add_requires("glfw   3.4       ")
 add_requires("stb    2026.03.18")
 add_requires("libsdl3")
